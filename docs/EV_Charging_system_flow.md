@@ -1,13 +1,10 @@
----
-config:
-  layout: elk
----
+```mermaid
 sequenceDiagram
     participant Driver
-    participant MobileApp as Mobile App
-    participant ChargingStation as Charging Station
-    participant BackendCMS as Backend/CMS
-    participant GridEMS as Grid/EMS
+    participant MobileApp
+    participant BackendCMS
+    participant ChargingStation
+    participant GridEMS
 
     Driver->>MobileApp: Open app / Request nearby stations
     MobileApp->>MobileApp: Get user location (GPS)
@@ -42,3 +39,4 @@ sequenceDiagram
         BackendCMS-->>MobileApp: Push updates (status, cost, battery)
         MobileApp-->>Driver: View charging status
     end
+```
