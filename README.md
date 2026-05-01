@@ -1,4 +1,4 @@
-```text
+
 # 🌍 API Automation Framework – Open Charge Map
 
 This is a Python-based API automation framework using `pytest` for validating Open Charge Map APIs.
@@ -30,11 +30,11 @@ It generates **HTML test reports** with timestamp under report folder for execut
 ---
 
 # 📁 Project Structure
-
+```bash
 api-framework/
 
 ├── api/
-│   ├── base_client.py
+│   ├── base_api.py
 │   ├── referencedata_api.py
 │   └── poi_api.py
 
@@ -49,7 +49,7 @@ api-framework/
 ├── reports/
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 # 🚀 How to Copy & Run from GitHub
@@ -59,15 +59,17 @@ git clone https://github.com/asimkumar04/EVChargingFlowAutomation.git
 cd EVChargingFlowAutomation
 2️ Install Dependencies
 pip install -r requirements.txt
-3️ Run the Application
-python main.py
-4. Run tests using:
+3. Run tests using:
 pytest
+
+---
 
 # 🔐 How to Properly Get an API Authentication Key
 To get a valid api key visit the Web URL and inspect the API calls triggered. On the request headers of the
 API calls pointing to the mentioned base url you will find a valid Api key to use for your requests. Replace the
 same in .env file
+
+---
 
 # 📊 System Flow Diagram (Mermaid)
 
@@ -80,4 +82,5 @@ Start of charging session using OCPP protocol
 Dynamic charging optimization based on grid conditions
 Real-time monitoring during charging
 
-```
+#Author
+Asim Kumar
