@@ -7,13 +7,14 @@ It covers:
 - POI (Point of Interest) API
 
 The framework validates:
+
 ✔ Functional correctness  
 ✔ Response time performance  
 ✔ Schema validation  
 ✔ Business rules  
 ✔ Data integrity  
 
-It generates **HTML test reports** for execution results.
+It generates **HTML test reports** with timestamp under report folder for execution results.
 
 ---
 
@@ -30,19 +31,19 @@ It generates **HTML test reports** for execution results.
 # 📁 Project Structure
 
 api-framework/
-│
+
 ├── api/
 │   ├── base_client.py
 │   ├── referencedata_api.py
 │   ├── poi_api.py
-│
+
 ├── tests/
 │   ├── test_referencedata.py
 │   ├── test_poi.py
-│
+
 ├── docs/
 │   ├── EV_charging_system_flow.md
-│
+
 ├── conftest.py
 ├── reports/
 ├── requirements.txt
@@ -57,4 +58,4 @@ api-framework/
 Open terminal and run:
 
 ```bash id="clone_001"
-git clone <your-github-repo-url>
+git clone https://github.com/asimkumar04/EVChargingFlowAutomation
