@@ -1,3 +1,4 @@
+```text
 # 🌍 API Automation Framework – Open Charge Map
 
 This is a Python-based API automation framework using `pytest` for validating Open Charge Map APIs.
@@ -33,16 +34,16 @@ It generates **HTML test reports** with timestamp under report folder for execut
 api-framework/
 
 ├── api/
-   base_client.py
-   referencedata_api.py
-   poi_api.py
+│   ├── base_client.py
+│   ├── referencedata_api.py
+│   └── poi_api.py
 
 ├── tests/
-   test_referencedata_api.py
-   test_poi_api.py
+│   ├── test_referencedata_api.py
+│   └── test_poi_api.py
 
 ├── docs/
-   EV_charging_system_flow.md
+│   └── EV_charging_system_flow.md
 
 ├── conftest.py
 ├── reports/
@@ -67,3 +68,16 @@ pytest
 To get a valid api key visit the Web URL and inspect the API calls triggered. On the request headers of the
 API calls pointing to the mentioned base url you will find a valid Api key to use for your requests. Replace the
 same in .env file
+
+# 📊 System Flow Diagram (Mermaid)
+
+This project uses a Mermaid sequence diagram present inside docs/EV_charging_system_flow.md visualizes the end-to-end EV charging workflow, from station discovery to active charging session monitoring.
+The diagram is written in Mermaid syntax, which GitHub renders natively inside Markdown files. It illustrates:
+
+Station discovery using location services
+Authentication flow for EV charging
+Start of charging session using OCPP protocol
+Dynamic charging optimization based on grid conditions
+Real-time monitoring during charging
+
+```
