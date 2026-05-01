@@ -33,16 +33,16 @@ It generates **HTML test reports** with timestamp under report folder for execut
 api-framework/
 
 ├── api/
-│   ├── base_client.py
-│   ├── referencedata_api.py
-│   ├── poi_api.py
+   base_client.py
+   referencedata_api.py
+   poi_api.py
 
 ├── tests/
-│   ├── test_referencedata.py
-│   ├── test_poi.py
+   test_referencedata_api.py
+   test_poi_api.py
 
 ├── docs/
-│   ├── EV_charging_system_flow.md
+   EV_charging_system_flow.md
 
 ├── conftest.py
 ├── reports/
@@ -53,9 +53,17 @@ api-framework/
 
 # 🚀 How to Copy & Run from GitHub
 
-## 1. Clone the Repository
+1️ Clone the Repository
+git clone https://github.com/asimkumar04/EVChargingFlowAutomation.git
+cd EVChargingFlowAutomation
+2️ Install Dependencies
+pip install -r requirements.txt
+3️ Run the Application
+python main.py
+4. Run tests using:
+pytest
 
-Open terminal and run:
-
-```bash id="clone_001"
-git clone https://github.com/asimkumar04/EVChargingFlowAutomation
+# 🔐 How to Properly Get an API Authentication Key
+To get a valid api key visit the Web URL and inspect the API calls triggered. On the request headers of the
+API calls pointing to the mentioned base url you will find a valid Api key to use for your requests. Replace the
+same in .env file
